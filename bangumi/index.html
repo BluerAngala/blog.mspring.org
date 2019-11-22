@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">bangumi | CH 笔记</title>
+  
+    <link rel="shortcut icon" href="https://img.vim-cn.com/2c/1443adc3695fde41c9db8cddb937dcc78d0c6c">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "君の名はCH";
+  mashiro_option.author_name = "CH";
+  mashiro_option.site_url = "https://lawstudent.xyz";
+  mashiro_option.v_appId = "oIhsIOrpoH4EQYI9e4Cp8W01-gzGzoHsz";
+  mashiro_option.v_appKey = "vdy5B2FKSXtybHyXD9DeFXPE";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp,http://img.vim-cn.com/86/4ee29af6c40eb61df2460addf5e0450a3a8c69.jpg,http://img.vim-cn.com/fc/cf32665db60c9d797775d10976b1a563aaff32.jpg,http://img.vim-cn.com/10/e011f4babca7a6cba583cf35cb2126ec55491d.jpg,http://img.vim-cn.com/28/13e6e629e97b494c5f055360f8a04138b9aa6a.jpg,http://img.vim-cn.com/5f/42aad55445f0a418785a32bd29dbb618b03167.jpg,http://img.vim-cn.com/00/1440798844e7d6152a5e76b360f8e99782ca75.jpg,http://img.vim-cn.com/9f/6ea44df3140f4090951645556fae1c2ef16b5f.jpg,http://img.vim-cn.com/77/d9d0e70bd436ed273482a78a7e59cddfcdf90c.jpg,http://img.vim-cn.com/fc/b19134a4186b2a298e7aba2a14bf2e797c2a63.jpg,http://img.vim-cn.com/f8/2668fbe275f1ce66b355fa5fd0ab44f505817e.jpg,http://img.vim-cn.com/c2/980f75f2c047d0957e3c8227b3f8d84e67f752.jpg".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <!-- 这是首页的部分动态样式，菜单栏，右侧进度条动态/颜色，注意菜单栏部分样式在sakura-app.js（烦人的橘色） -->
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#33ACFF}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#33ACFF}::-webkit-scrollbar-thumb{background:#33ACFF}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#33ACFF}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#33ACFF}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://lawstudent.xyz">
+          <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>虽然辛苦，但我还是会选择那种滚烫的人生。</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/my/m/music/playlist?id=899580381" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.zhihu.com/people/cochman/activities" target="_blank" class="social-github" title="zhihu">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/zhihu.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li class="wechat">
+                  <a href="/#">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="http://img.vim-cn.com/4b/301376e7702a5bf84d8513f4a155c30666c6a5.jpg">
+                  </div>
+                </li>
+              
+            
+              
+                <li class="wechat">
+                  <a href="/#">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/qq.png">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="https://img.vim-cn.com/4f/08d86641c58c04bab7f778da37ddd8886a43e2.jpg">
+                  </div>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">君の名は</span>
+            <span class="shironeko">CH</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/大学堂/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          大学堂
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/技术斋/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术斋
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/兴趣阁/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          兴趣阁
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/工具箱/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          工具箱
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随手记/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          随手记
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/tags/悦读/">
+                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          影视
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/图集/">
+                          <i class="fa fa-photo" aria-hidden="true"></i>
+                          图集
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/lab/">
+                          <i class="fa fa-cogs" aria-hidden="true"></i>
+                          更新
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" href="/css/bangumi.css">
+<div class="pattern-center-blank"></div>
+<div id="content" class="site-content">
+  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+    <header class="page-header"><h1 class="cat-title">番组计划</h1> <span class="cat-des"><p>这里将是永远的回忆</p> </span></header>
+    
+    <div class="bangumi">
+      <div class="row" id="rootRow">
+        
+          <div class="col s12 m6" id="bangumi-0">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/201451811102641019.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/201451811102641019.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  地球百子<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  地球百子<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>该剧根据一套作者为Kass Morgan的尚未出版的小说改编，来自《美少女的谎言第三季》等系列剧集的制片公司，故事描述未来人类爆发核战争后，地球文明被彻底摧毁，幸存者不得不乘坐「方舟号」太空站四处流浪。97年之后，太空站上的幸存者们尝试重新对地球进行殖民。他们首先挑选了100名有犯罪记录的青少年到已经彻底改变外貌的地球表面进行「探索」，这些人成了人类生存下去的关键。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-1">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/19531.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/19531.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  神盾局特工第一季-第六季<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  神盾局特工第一季-第六季<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>熟悉Marvel漫画的人都知道，「S.H.I.E.L.D」是「Strategic Hazard Intervention Espionage Logistics Directorate」（国土战略防御攻击与后勤保障局，或称神盾局）的缩写，百度百科上有一个词条专门对其进行了解释。在今年的热门电影《复仇者联盟》（The Avengers）中，「S.H.I.E.L.D」的主管Nick Fury召集钢铁侠、美国上尉、绿巨人、黑寡妇、雷神索尔等超级英雄共同对抗企图统治地球的洛基（索尔的兄弟）。据称电视剧版《S.H.I.E.L.D》的剧本将由Joss Whedon亲自创作，首集也由他亲自执导，他的弟弟Jed Whedon和弟媳Maurissa Tancharoen将协助构思（他们曾和Joss Whedon共同创作网络剧《恐怖博士的欢唱博客》）。这是近年来电视广播网上第一个获得试映集预订的Marvel漫画改编项目。剧中的主要人物为：Skye，年近30年的「完美女性」，幽默、聪明、体贴他人、充满自信。她善于利用智慧和个人魅力来达到自己的目的。Grant Ward特工，典型的肉盾角色，冷酷到家。他行事鲁莽，有一点牛脾气，有时会搞砸人际关系。他平时很安静，是那种能够吸引你好感的人。Melinda May特工（温明娜），人送外号「The Calvary」（耶稣受难），是一个强悍的女战士，精通武器和飞机驾驶技术。她有过很不好的经历，因此她平时非常安静，而且人格有一点受损。在必要的时候，Melinda不惜违抗命令自行其事。Elizabeth Henstridge扮演Gemma Simmons特工，是个科学天才；Iain De Caestecker扮演Leo Fitz特工，是个技术专家。两人一同接受训练，生活中和执行任务时都喜欢待在一起——尽管他们一见面就吵个不停。他们有「Nerd」倾向，把彼此的关系看做兄妹之情。Jemma擅长生物化学方面的技术，而Leo擅长武器研发和相关技术。Brett Dalton扮演技艺高超的Grant特工，勇敢无惧、处事冷静，但不善与人交流。此前制片方已经承认《复仇者联盟》电影中的演员Clark Gregg将演出该剧，再次扮演电影中的角色Coulson特工。</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-2">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/894df736a793bc92a63f6eb89f1dca3d.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/894df736a793bc92a63f6eb89f1dca3d.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  亿万<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  亿万<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>《财富之战 Billions》是一个大胆的现代戏，通过描绘两个雄心勃勃但对立角色的人物性格来讲述关于财富、影响力和腐败的问题。精明、强硬的检察官Chuck Rhodes（Paul Giamatti）和才华横溢、极具野心的对冲基金大亨Bobby “Axe” Axelrod（Damian Lewis）。剧集设定包括了纽约的强权政治和金融活动的权谋诡计，通过错综复杂的叙事特色来编织一个高风险的追捕游戏。此外Maggie Siff、Malin Akerman、Toby Leonard Moore、David Costabile和Condola Rashad联合主演</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-3">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/281.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/281.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  国土安全第一季-第七季<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  国土安全第一季-第七季<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>中情局反恐事务的特工Carrie（克莱尔·丹妮丝 Claire Danes 饰）在中东地区执行任务时，她的线向她透露了一个惊人的秘密：一名被俘的美军士兵已经变节，现在为基地组织效力，准备在美国本土策划发动恐怖袭击。关于反恐的剧还有《反恐24小时第八季》等系列剧集，据反映还不错。几个月后，美国海军陆战队根据线报在阿富汗发现了被俘近九年的Nicholas Brody中士（戴米恩·路易斯 Damian Lewis 饰），荣归故里的Brody受到英雄般的礼遇。同时，Carrie也被中情局调回国内工作，并坚信Brody就是那个已经变节的士兵，从而暗中展开调查。Brody发现妻子妻子Jessica（莫瑞娜·巴卡琳 Morena Baccarin 饰）已与好友相恋，醋性大发的他与Carrie发生了关系。Carrie一方面爱上了这个男人，一方面还是对他存有疑心。究竟Brody是否变节？他与Carrie的关系将如何发展？</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-4">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/19319.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/19319.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  罪恶黑名单第一季-第七季<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  罪恶黑名单第一季-第七季<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>NBC管理层盛赞该剧是NBC十年来「最强的一部新剧」，并对其前景十分看好。几十年来，绰号「红魔」（Red）的前军事情报官员Raymond Reddington一直是联邦调查局通缉犯名单上的重要人物。他为全世界形形  色色的罪犯代办各种交易，撮合非法生意，被人们称作「犯罪世界的管理员」。然而令人大跌眼镜的是，他竟然主动向从来没有抓住过他的联邦调查局「自首」，并提出一个神秘但是惊人的条件：他愿意帮助联邦政府抓住所有人都认为早就死了的恐怖分子Ranko Zamani，但他只和一个联邦探员对话——Elizabeth “Liz” Keen（Megan Boone），一位刚刚结束训练成为联邦调查局初级分析师的「菜鸟」。Liz被这突如其来的情况搞得一头雾水——这可是她第一天上班啊！</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col s12 m6" id="bangumi-5">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(https://img.kukan5.com/pic/uploadimg/2016-11/112.jpg);" data-src="https://img.kukan5.com/pic/uploadimg/2016-11/112.jpg">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  记忆神探第一季-第四季<i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                </p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    已追完</div>
+                    <progress class="skill-1" max="100" value="100">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  记忆神探第一季-第四季<i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <br>
+                </span>
+                <span>
+                  放送时间: 2019年10月13日-2019年11月16日.<span>
+                    <p>《不可遗忘》的主人公是一位有着极为罕见完美记忆的警探Carrie Wells，由派琵·蒙格玛丽(Poppy Montgomery)扮演。Carrie所经历的每个地点、每次对话、每个伤心与快乐的时刻都牢牢地嵌在了她的脑子里，她无法忘记这些，但只有一件事是例外，她姐姐很久以前被谋杀的细节。在经过了一段时间的休息后，Carrie感觉回到工作中对她来说是无比正确的选择，但在解决一起凶杀案的时候她不得不和前男友兼自己的搭档NYPD警探Al Burns (迪伦·沃尔什)再次共事。他们这一小组的成员还包括Al的搭档Mike Costello (Michael Gaston)、队中的新手Roe Saunders (凯文·兰金)以及有些小聪明的Nina Inara (Daya Vaidya)。虽然对Al心存复杂的感觉，但Carrie还是决定加入他的小组去专门解决凶杀案，当然，她更希望借此能解决自己姐姐的被杀之谜，她所要做的，就是“不可遗忘</p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        已追完</div>
+                        <progress class="skill-1" max="100" value="100">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    
+  </article>
+</div>
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 CH<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2018</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin" style="position: fixed">
+ <div class="theme-controls row-container">
+  <ul class="menu-list">
+   <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+   <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+   <li id="gribs-bg"> <i class="fa fa-slack" aria-hidden="true"></i></li>
+   <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+   <li id="totem-bg"> <i class="fa fa-optin-monster" aria-hidden="true"></i></li>
+   <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+   <li id="bing-bg"> <i class="iconfont icon-bing"></i></li>
+   <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+  </ul>
+ </div>
+ <div class="font-family-controls row-container">
+  <button type="button" class="control-btn-serif selected" data-mode="serif" onclick="mashiro_global.font_control.change_font()">Serif</button>
+  <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+  </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+ 
+  <div class="changeSkin-gear no-select">
+  <div class="keys" id="setbtn"> 
+   <span id="open-skinMenu"> 切换主题 | SCHEME TOOL  
+     <i class="iconfont icon-gear inline-block rotating"></i> 
+   </span>
+  </div>
+</div>
+
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">君の名はCH</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/honjun" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="http://weibo.com/mashirozx?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=1107117864&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/大学堂/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  大学堂
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/技术斋/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术斋
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/兴趣阁/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  兴趣阁
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/工具箱/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  工具箱
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随手记/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  随手记
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags/悦读/">
+                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  影视
+                </a>
+              </li>
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/图集/">
+                  <i class="fa fa-photo" aria-hidden="true"></i>
+                  图集
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+              <li>
+                <a href="/lab/">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  更新
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="899580381"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.5"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+</body>
+</html>
