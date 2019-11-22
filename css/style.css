@@ -637,7 +637,8 @@ to {
     animation:header 1s
 }
 .site-branding {
-    animation:sitetop 1s
+    animation:sitetop 1s;
+    font-family: STXingkai !important;
 }
 .searchbox,.site-top .lower,.header-user-avatar {
     animation:searchbox 1s
