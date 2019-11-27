@@ -28,7 +28,7 @@ body {
 
 .image {
   position: relative;
-  width: 300px;
+  width: 450px;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,6 +37,8 @@ body {
 .image:nth-child(2n) {
   justify-self: start;
 }
+
+
 
 .image:nth-child(1) {
   background-image: url("../img/image1.jpg");
